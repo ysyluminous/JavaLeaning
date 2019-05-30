@@ -100,7 +100,7 @@ Java虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM有针对不同�
 
 > HotSpot采用了惰性评估(Lazy Evaluation)的做法，根据二八定律，消耗大部分系统资源的只有那一小部分的代码（热点代码），而这也就是JIT所需要编译的部分。JVM会根据代码每次被执行的情况收集信息并相应地做出一些优化，因此执行的次数越多，它的速度就越快。JDK 9引入了一种新的编译模式AOT(Ahead of Time Compilation)，它是直接将字节码编译成机器码，这样就避免了JIT预热等各方面的开销。JDK支持分层编译和AOT协作使用。但是 ，AOT 编译器的编译质量是肯定比不上 JIT 编译器的。
 
-总结：Java虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM  实现是 Java 语言“一次编译，随处可以运行”的关键所在。 
+总结：Java虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM  实现是 Java 语言“一次编译，随处可以运行”的关键所在。
 
 ### JDK 和 JRE
 
@@ -220,7 +220,7 @@ String 中的对象是不可变的，也就可以理解为常量，线程安全�
 
 每次对 String 类型进行改变的时候，都会生成一个新的 String 对象，然后将指针指向新的 String 对象。StringBuffer 每次都会对 StringBuffer 对象本身进行操作，而不是生成新的对象并改变对象引用。相同情况下使用 StringBuilder 相比使用 StringBuffer 仅能获得 10%~15% 左右的性能提升，但却要冒多线程不安全的风险。
 
-**对于三者使用的总结：** 
+**对于三者使用的总结：**
 
 1. 操作少量的数据: 适用String
 2. 单线程操作字符串缓冲区下操作大量数据: 适用StringBuilder
@@ -251,7 +251,7 @@ Java 程序在执行子类的构造方法之前，如果没有用 super() 来调
 1. 接口的方法默认是 public，所有方法在接口中不能有实现(Java 8 开始接口方法可以有默认实现），而抽象类可以有非抽象的方法。
 2. 接口中除了static、final变量，不能有其他变量，而抽象类中则不一定。
 3. 一个类可以实现多个接口，但只能实现一个抽象类。接口自己本身可以通过extends关键字扩展多个接口。
-4. 接口方法默认修饰符是public，抽象方法可以有public、protected和default这些修饰符（抽象方法就是为了被重写所以不能使用private关键字修饰！）。 
+4. 接口方法默认修饰符是public，抽象方法可以有public、protected和default这些修饰符（抽象方法就是为了被重写所以不能使用private关键字修饰！）。
 5. 从设计层面来说，抽象是对类的抽象，是一种模板设计，而接口是对行为的抽象，是一种行为的规范。
 
 备注：在JDK8中，接口也可以定义静态方法，可以直接用接口名调用。实现类和实现是不可以调用的。如果同时实现两个接口，接口中定义了一样的默认方法，则必须重写，不然会报错。(详见issue:[https://github.com/Snailclimb/JavaGuide/issues/146](https://github.com/Snailclimb/JavaGuide/issues/146))
@@ -283,7 +283,7 @@ new运算符，new创建对象实例（对象实例在堆内存中），对象�
 
 ## 23. 静态方法和实例方法有何不同
 
-1. 在外部调用静态方法时，可以使用"类名.方法名"的方式，也可以使用"对象名.方法名"的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。 
+1. 在外部调用静态方法时，可以使用"类名.方法名"的方式，也可以使用"对象名.方法名"的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。
 
 2. 静态方法在访问本类的成员时，只允许访问静态成员（即静态成员变量和静态方法），而不允许访问实例成员变量和实例方法；实例方法则无此限制。
 
@@ -443,7 +443,7 @@ final关键字主要用在三个地方：变量、方法、类。
 
 **关于返回值：**
 
-如果try语句里有return，返回的是try语句块中变量值。 
+如果try语句里有return，返回的是try语句块中变量值。
 详细执行过程如下：
 
 1. 如果有返回值，就把返回值保存到局部变量中；
@@ -467,11 +467,11 @@ String s  = input.nextLine();
 input.close();
 ```
 
-方法2：通过 BufferedReader 
+方法2：通过 BufferedReader
 
 ```java
-BufferedReader input = new BufferedReader(new InputStreamReader(System.in)); 
-String s = input.readLine(); 
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+String s = input.readLine();
 ```
 
 ## 35 Java 中 IO 流分为几种?BIO,NIO,AIO 有什么区别?
@@ -515,13 +515,3 @@ Java Io流共涉及40多个类，这些类看上去很杂乱，但实际上很�
 - https://stackoverflow.com/questions/1906445/what-is-the-difference-between-jdk-and-jre
 - https://www.educba.com/oracle-vs-openjdk/
 - https://stackoverflow.com/questions/22358071/differences-between-oracle-jdk-and-openjdk?answertab=active#tab-top
-
-## 公众号
-
-如果大家想要实时关注我更新的文章以及分享的干货的话，可以关注我的公众号。
-
-**《Java面试突击》:** 由本文档衍生的专为面试而生的《Java面试突击》V2.0 PDF 版本[公众号](#公众号)后台回复 **"Java面试突击"** 即可免费领取！
-
-**Java工程师必备学习资源:** 一些Java工程师常用学习资源公众号后台回复关键字 **“1”** 即可免费无套路获取。 
-
-![我的公众号](https://user-gold-cdn.xitu.io/2018/11/28/167598cd2e17b8ec?w=258&h=258&f=jpeg&s=27334)
