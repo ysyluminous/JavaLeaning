@@ -40,6 +40,7 @@
 * [Object类、常用API](./02JavaBase/Object类、常用API.md)
 * [Java 基础知识回顾](./02JavaBase/Java基础知识.md)
 * [J2EE 基础知识回顾](./02JavaBase/J2EE基础知识.md)
+* [面向对象](./02JavaBase/ObjectOriented/ObjectOriented.md)
 
 ## String
 
@@ -88,6 +89,7 @@
 ## 系统设计
 ### 设计模式
 - [设计模式系列文章](./system-design/设计模式.md)
+- [设计模式](02JavaBase/DesignPattern/DesignPattern.md)
 
 ## JavaWeb
 jsp
@@ -133,7 +135,7 @@ servlet
 - [ ] cassandra
 - [ ] mongoDB
 - [ ] redis
-### MySQL
+
 ### Redis
 * [Redis 总结](./05data/Redis/Redis.md)
 * [Redlock分布式锁](./05data/Redis/Redlock分布式锁.md)
@@ -143,61 +145,75 @@ servlet
 ## 自动部署
 - Capistrano
 - CodeDeploy
+
 ## 持续集成（CI）
 - [ ]  Bamboo
 - [ ]  Hudson
 - [ ] Jenkins
+
 ## 配置管理
 - [ ] Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail
+
 ## 编排
 - [X] Kubernetes、Core、Apache Mesos、DC/OS
+
 ## 服务注册与发现
 - [X] Zookeeper
 - [ZooKeeper 相关概念总结](./system-design/framework/ZooKeeper.md)
 - [ZooKeeper 数据模型和常见命令](./system-design/framework/ZooKeeper数据模型和常见命令.md)
 - [ ] etcd
 - [ ] Consul
+
 ## 脚本语言
 - [ ] python、ruby、shell
+
 ## 日志管理
 - [ ] ELK
 - [ ] Logentries
+
 ## 系统监控
 - [ ] Datadog、Graphite、Icinga、Nagios
+
 ## 性能监控
 - [ ] AppDynamics、New Relic、Splunk
 
 ## 预警：
 - [ ] PagerDuty
 - [ ] pingdom、厂商自带如AWS SNS
+
 ## HTTP加速器
 - [ ] Varnish
+
 ## 消息总线
 - [ ] ActiveMQ、SQS
+
 ## 应用服务器
 - [ ] Tomcat
 - [ ] JBoss
+
 ## Web服务器
 - [ ] Apache
 - [ ] Nginx、IIS
+
 ## 容器
 - [ ] Docker
-
 * [Docker 入门](./tools/Docker.md)
 * [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
 LXC、第三方厂商如AWS
 
 ## 压力测试
 - [ ] JMeter
-* [JMeter](./07plugs/FirstJMeter.md)
-
+* [JMeter入门](./07plugs/FirstJMeter.md)
 - [ ] Blaze Meter
 - [ ] loader.io
+
 ## 项目管理（PM）
+
 - [ ] Jira、Asana
 - [ ] Taiga
 - [ ] Trello
 - [ ] Basecamp、Pivotal Tracker
+
 # 面试指南
 ## 实习生必读
 * [揭露培训机构以招聘名义变相招生的欺诈套路！莫被骗！](https://blog.csdn.net/qq_33840251/article/details/90348984)
@@ -322,6 +338,7 @@ LXC、第三方厂商如AWS
 
 ### 降级
 - 如何进行降级？
+
 
 ## 微服务架构
 - [微服务架构整个章节内容属额外新增，后续抽空更新，也欢迎读者们参与补充完善](https://github.com/doocs/advanced-java)

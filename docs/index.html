@@ -6,23 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/prism.css">
+  <!-- 原始皮肤 -->
+  <!-- 
+	  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+	  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/prism.css">
+   -->
+   <!-- docsify-themeable -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">-->
+<style>
+  :root {
+    /* Reduce the font size */
+    --base-font-size: 16px;
+	
+	 /* 护眼 */
+	 /*  --base-background-color: #CCE8CF; */
+	 
+	   --zoomimage-overlay-background: rgba(0, 0, 0, 0.875);
+
+    /* Change the theme color hue */
+    /*--theme-hue: 325;*/
+
+    /* Change the sidebar bullets */
+   /* --sidebar-nav-link-before-content: '😀';*/	
+  }
+</style>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'JavaLearning',
-      repo: 'https://github.com/Snailclimb/JavaGuide',
-	  maxLevel: 6,//最大支持渲染的标题层级
+      name: 'Java构架师之路',
+      repo: 'https://github.com/ysyluminous/JavaLeaning',
+	  //最大支持渲染的标题层级
+	  maxLevel: 6,
 	  homepage: 'HomePage.md',
-	  coverpage: true,//封面,_coverpage.md
-	  auto2top: true,//切换页面后是否自动跳转到页面顶部
+	  //封面,_coverpage.md
+	  coverpage: true,
+	
+	  //开启封面页右上方导航
+	  //loadNavbar: true,
+	  //切换页面后是否自动跳转到页面顶部
+	  auto2top: true,
 	  //ga: 'UA-138586553-1',
 	  //logo: 'https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3logo-透明.png' ,
+	  
+	   // ...
+      themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
+      },
+	  
+	  
+	  
      search: {
-	    //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+	   // 过期时间，单位毫秒，默认一天
+	    //maxAge: 86400000, 
         paths: 'auto',
 		placeholder: '搜索',
 		noData: '找不到结果',
@@ -32,6 +71,8 @@
 	  
     }
   </script>
+  <!-- docsify-themeable (latest v0.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <!--Java代码高亮-->
   <script src="//unpkg.com/prismjs/components/prism-java.js"></script>

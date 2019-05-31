@@ -17,9 +17,20 @@
   <a href="#投稿"><img src="https://img.shields.io/badge/support-投稿-critical.svg" alt="投稿"></a>
 </p>
 
-<h2 align="center"><a href ="https://ysyluminous.github.io/JavaLeaning/">文档在线阅读</a></h2>
+<h2 align="center">
+  <a href ="https://ysyluminous.github.io/JavaLeaning/">文档在线阅读</a>
+</h2>
+  <p align="center">
+    <a href="https://ysyluminous.github.io/JavaLeaning">
+      Github版本，更新快，速度慢
+    </a>
+    <BR>
+    <a href="https://ysygitee.gitee.io/javaleaning">
+      Gitee版本，更新慢，速度慢
+    </a>
+</p>
 
-推荐使用 <https://ysyluminous.github.io/JavaLeaning> 在线阅读)，在线阅读内容本仓库同步一致。这种方式阅读的优势在于：有侧边栏阅读体验更好，
+极佳阅读体验，全文检索，侧边导航。
 
 ## 目录
 
