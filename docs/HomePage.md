@@ -11,6 +11,9 @@
 
 # 导论
 * [学习方法](./00recommend/studyMethod.md)
+- [Java程序员必备书单](./00recommend/RecommendBook.md)
+- [GitHub漫游指南](./00recommend/GitHubRec.md)
+
 
 # 计算机基础
 
@@ -23,9 +26,16 @@
 ### Linux相关
 * [后端程序员必备的 Linux 基础知识](./operating-system/后端程序员必备的Linux基础知识.md)  
 * [Shell 编程入门](./operating-system/Shell.md)  
-## 数据结构与算法
+## 数据结构与算法  
 ### 数据结构
 - [数据结构知识学习与面试](./dataStructures-algorithms/数据结构.md)
+- [(大话数据结构01)顺序表和单链表的比较](https://blog.csdn.net/u010391342/article/details/86760777)
+- [(大话数据结构02)循环列表的实现](https://blog.csdn.net/u010391342/article/details/86767093)
+- [(大话数据结构03)什么是双向链表](https://blog.csdn.net/u010391342/article/details/86768074)
+- [(大话数据结构04)什么是栈](https://blog.csdn.net/u010391342/article/details/86773596)
+- [(大话数据结构05)什么是队列](https://blog.csdn.net/u010391342/article/details/86775025)
+- [(大话数据结构06)什么是二叉树](https://blog.csdn.net/u010391342/article/details/86990584)
+- [(大话数据结构07)查找算法](https://blog.csdn.net/u010391342/article/details/88715233)
 ### 算法
 - [算法学习资源推荐](./dataStructures-algorithms/算法学习资源推荐.md)  
 - [几道常见的子符串算法题总结 ](./dataStructures-algorithms/几道常见的子符串算法题.md)
@@ -34,7 +44,10 @@
 - [公司真题](./dataStructures-algorithms/公司真题.md)
 - [回溯算法经典案例之N皇后问题](./dataStructures-algorithms/Backtracking-NQueens.md)
 
-# 02JavaBase
+- [leetcode算法题](leetcode/leetcodeJava.md)
+- [leetcode数据库算法题](leetcode/sql算法.md)
+
+# Java基础
 
 ## 基础
 * [Object类、常用API](./02JavaBase/Object类、常用API.md)
@@ -77,10 +90,13 @@
 * [BIO,NIO,AIO 总结 ](./02JavaBase/BIO-NIO-AIO.md)
 * [Java IO 与 NIO系列文章](./02JavaBase/Java%20IO与NIO.md)
 
-## Java 8
+## 新特性
 
 * [Java 8 新特性总结](./02JavaBase/What's%20New%20in%20JDK8/Java8Tutorial.md)
 * [Java 8 学习资源推荐](./02JavaBase/What's%20New%20in%20JDK8/Java8教程推荐.md)
+
+
+- [x] [BIO,NIO,AIO 总结 ](./java/BIO-NIO-AIO.md)
 
 ## 编程规范
 
@@ -91,29 +107,63 @@
 - [设计模式系列文章](./system-design/设计模式.md)
 - [设计模式](02JavaBase/DesignPattern/DesignPattern.md)
 
-## JavaWeb
-jsp
-servlet
-## Java框架
+# JavaWeb
+- jsp
+- servlet
 
-### Spring
+# 热门框架
+
+## Spring
+- [Spring Aop](Spring/aop.md)
 - [Spring 学习与面试](./system-design/framework/spring/Spring.md)
 - [Spring中bean的作用域与生命周期](./system-design/framework/spring/SpringBean.md)
 - [SpringMVC 工作原理详解](./system-design/framework/spring/SpringMVC-Principle.md)
 - [Spring中都用到了那些设计模式?](./system-design/framework/spring/Spring-Design-Patterns.md)
-## 数据通信
-- [数据通信(RESTful、RPC、消息队列)相关知识点总结](./system-design/data-communication/summary.md)
+
+## SpringCloud
+- [微服务架构整个章节内容属额外新增，后续抽空更新，也欢迎读者们参与补充完善](https://github.com/doocs/advanced-java)
+- [关于微服务架构的描述](micro-services/microservices-introduction.md)
+- [SpringCloud集成eureka注册中心访问权限](https://blog.csdn.net/u010391342/article/details/83086519)
+- [SpringCloud集成Consul实现服务注册中心](https://blog.csdn.net/u010391342/article/details/83082801)
+- [SpringCloud服务链路追踪](Spring/Springcloud服务链路追踪.md)
+- [SpringCloud Alibaba系列(一)服务注册](https://blog.csdn.net/u010391342/article/details/86655712)
+- [SpringCloud Alibaba系列(二)Sentinel应用的限流管理](https://blog.csdn.net/u010391342/article/details/86678637)
+- [SpringCloud Alibaba系列(三)Nacos Config配置中心](https://blog.csdn.net/u010391342/article/details/86702084)
+- 什么是微服务？微服务之间是如何独立通讯的？
+- Spring Cloud 和 Dubbo 有哪些区别？
+- Spring Boot 和 Spring Cloud，谈谈你对它们的理解？
+- 什么是服务熔断？什么是服务降级？
+- 微服务的优缺点分别是什么？说一下你在项目开发中碰到的坑？
+- 你所知道的微服务技术栈都有哪些？
+- Eureka 和 Zookeeper 都可以提供服务注册与发现的功能，它们有什么区别？
+- ......
+
+## SpringBoot
+- [SpringBoot2集成Sharding-JDBC实现分库分表](2019/SpringBoot2集成Sharding-JDBC实现分库分表.md)
+- [SpringBoot自定义一个starter](2019/SpringBoot自定义一个starter.md  )
+- [SpringBoot集成prometheus+Grafana监控](https://blog.qinxuewu.club/2019/04/02/spring-xi-lie/springboot-ji-cheng-prometheus-grafana-jian-kong)
+- [SpringBoot Admin监控集成](Spring/SpringBootAdmin.md)
+- [SpringBoot集成ElasticSearch6.2版本](https://blog.csdn.net/u010391342/article/details/82153709)
+- [SpringBoot集成Kafka](https://blog.csdn.net/u010391342/article/details/81430402)
+
+- [Spring集成dubbo实现服务降级](Spring/Spring集成dubbo集群实现服务降级.md)
+
+## SpringMVC
+- [SpringMVC生命周期](Spring/SpringMvc生命周期.md)
+
+
+# 数据通信
+## dubbo
+
 - [Dubbo 总结：关于 Dubbo 的重要知识点](./system-design/data-communication/dubbo.md)
-- [消息队列总结](./system-design/data-communication/message-queue.md)
-- [RabbitMQ 入门](./system-design/data-communication/RabbitMQ.md)
-- [RocketMQ的几个简单问题与答案](./system-design/data-communication/RocketMQ-Questions.md)
-## 网站架构
+
+# 网站架构
 - [一文读懂分布式应该学什么](./system-design/website-architecture/分布式.md)
 - [8 张图读懂大型网站技术架构](./system-design/website-architecture/8%20张图读懂大型网站技术架构.md)
 - [【面试精选】关于大型网站系统架构你不得不懂的10个问题](./system-design/website-architecture/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md)
 
-## 开发工具
-- IEDA
+# 开发工具
+## IEDA
 [热键](./03software/IDEA/hotKey.md)
 ## 代码管理（SCM）：
 - GitHub
@@ -121,7 +171,7 @@ servlet
 - GitLab
 - BitBucket
 - SubVersion
-## 数据库：
+## 数据存储：
 - [X]  MySQL
 * [MySQL 学习与面试](./05data/MySQL.md)
 * [一千行MySQL学习笔记](./05data/一千行MySQL命令.md)
@@ -134,85 +184,37 @@ servlet
 ## NoSQL
 - [ ] cassandra
 - [ ] mongoDB
-- [ ] redis
+* [mongodb](./05data\mongo/mongodb.md)
+
 
 ### Redis
 * [Redis 总结](./05data/Redis/Redis.md)
 * [Redlock分布式锁](./05data/Redis/Redlock分布式锁.md)
 * [如何做可靠的分布式锁，Redlock真的可行么](./05data/Redis/如何做可靠的分布式锁，Redlock真的可行么.md)
 * [Redis面试](./05data/Redis/RedisInterview.md)
+- [在项目中缓存是如何使用的？缓存如果使用不当会造成什么后果？](high-concurrency/why-cache.md)
+- [Redis 和 Memcached 有什么区别？Redis 的线程模型是什么？为什么单线程的 Redis 比多线程的 Memcached 效率要高得多？](high-concurrency/redis-single-thread-model.md)
+- [Redis 都有哪些数据类型？分别在哪些场景下使用比较合适？](high-concurrency/redis-data-types.md)
+- [Redis 的过期策略都有哪些？手写一下 LRU 代码实现？](high-concurrency/redis-expiration-policies-and-lru.md)
+- [如何保证 Redis 高并发、高可用？Redis 的主从复制原理能介绍一下么？Redis 的哨兵原理能介绍一下么？](high-concurrency/how-to-ensure-high-concurrency-and-high-availability-of-redis.md)
+- [Redis 的持久化有哪几种方式？不同的持久化机制都有什么优缺点？持久化机制具体底层是如何实现的？](high-concurrency/redis-persistence.md)
+- [Redis 集群模式的工作原理能说一下么？在集群模式下，Redis 的 key 是如何寻址的？分布式寻址都有哪些算法？了解一致性 hash 算法吗？如何动态增加和删除一个节点？](high-concurrency/redis-cluster.md)
+- [了解什么是 redis 的雪崩、穿透和击穿？Redis 崩溃之后会怎么样？系统该如何应对这种情况？如何处理 Redis 的穿透？](high-concurrency/redis-caching-avalanche-and-caching-penetration.md)
+- [如何保证缓存与数据库的双写一致性？](high-concurrency/redis-consistence.md)
+- [Redis 的并发竞争问题是什么？如何解决这个问题？了解 Redis 事务的 CAS 方案吗？](high-concurrency/redis-cas.md)
+- [生产环境中的 Redis 是怎么部署的？](high-concurrency/redis-production-environment.md)
 
-## 自动部署
-- Capistrano
-- CodeDeploy
-
-## 持续集成（CI）
-- [ ]  Bamboo
-- [ ]  Hudson
-- [ ] Jenkins
-
-## 配置管理
-- [ ] Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail
-
-## 编排
-- [X] Kubernetes、Core、Apache Mesos、DC/OS
 
 ## 服务注册与发现
 - [X] Zookeeper
 - [ZooKeeper 相关概念总结](./system-design/framework/ZooKeeper.md)
 - [ZooKeeper 数据模型和常见命令](./system-design/framework/ZooKeeper数据模型和常见命令.md)
+- [Zookeeper面试专题](其它/Zookeeper面试专题.md)
 - [ ] etcd
 - [ ] Consul
 
-## 脚本语言
-- [ ] python、ruby、shell
 
-## 日志管理
-- [ ] ELK
-- [ ] Logentries
 
-## 系统监控
-- [ ] Datadog、Graphite、Icinga、Nagios
-
-## 性能监控
-- [ ] AppDynamics、New Relic、Splunk
-
-## 预警：
-- [ ] PagerDuty
-- [ ] pingdom、厂商自带如AWS SNS
-
-## HTTP加速器
-- [ ] Varnish
-
-## 消息总线
-- [ ] ActiveMQ、SQS
-
-## 应用服务器
-- [ ] Tomcat
-- [ ] JBoss
-
-## Web服务器
-- [ ] Apache
-- [ ] Nginx、IIS
-
-## 容器
-- [ ] Docker
-* [Docker 入门](./tools/Docker.md)
-* [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
-LXC、第三方厂商如AWS
-
-## 压力测试
-- [ ] JMeter
-* [JMeter入门](./07plugs/FirstJMeter.md)
-- [ ] Blaze Meter
-- [ ] loader.io
-
-## 项目管理（PM）
-
-- [ ] Jira、Asana
-- [ ] Taiga
-- [ ] Trello
-- [ ] Basecamp、Pivotal Tracker
 
 # 面试指南
 ## 实习生必读
@@ -233,48 +235,12 @@ LXC、第三方厂商如AWS
 - [5面阿里,终获offer(2018年秋招)](./essential-content-for-interview/BATJrealInterviewExperience/5面阿里,终获offer.md)
 - [蚂蚁金服2019实习生面经总结(已拿口头offer)](./essential-content-for-interview/BATJrealInterviewExperience/蚂蚁金服实习生面经总结(已拿口头offer).md)
 - [2019年蚂蚁金服、头条、拼多多的面试总结](./essential-content-for-interview/BATJrealInterviewExperience/2019alipay-pinduoduo-toutiao.md)
-# 资料
-## 书单
-- [Java程序员必备书单](./00recommend/RecommendBook.md)
-## Github榜单
-- [Java 项目月榜单](./github-trending/JavaGithubTrending.md)
-***
 
-## 待办
-- [x] [Java 8 新特性总结](./java/What's%20New%20in%20JDK8/Java8Tutorial.md)
-- [x] [Java 8 新特性详解](./java/What's%20New%20in%20JDK8/Java8教程推荐.md)
-- [ ] Java 多线程类别知识重构(---正在进行中---)
-- [x] [BIO,NIO,AIO 总结 ](./java/BIO-NIO-AIO.md)
-- [ ] Netty 总结(---正在进行中---)
-- [ ] 数据结构总结重构(---正在进行中---)
-## 高并发架构
-### [消息队列](high-concurrency/mq-interview.md)
-- [为什么使用消息队列？消息队列有什么优点和缺点？Kafka、ActiveMQ、RabbitMQ、RocketMQ 都有什么优点和缺点？](high-concurrency/why-mq.md)
-- [如何保证消息队列的高可用？](high-concurrency/how-to-ensure-high-availability-of-message-queues.md)
-- [如何保证消息不被重复消费？（如何保证消息消费的幂等性）](high-concurrency/how-to-ensure-that-messages-are-not-repeatedly-consumed.md)
-- [如何保证消息的可靠性传输？（如何处理消息丢失的问题）](high-concurrency/how-to-ensure-the-reliable-transmission-of-messages.md)
-- [如何保证消息的顺序性？](high-concurrency/how-to-ensure-the-order-of-messages.md)
-- [如何解决消息队列的延时以及过期失效问题？消息队列满了以后该怎么处理？有几百万消息持续积压几小时，说说怎么解决？](high-concurrency/mq-time-delay-and-expired-failure.md)
-- [如果让你写一个消息队列，该如何进行架构设计啊？说一下你的思路。](high-concurrency/mq-design.md)
 
-### [搜索引擎](high-concurrency/es-introduction.md)
-- [es 的分布式架构原理能说一下么（es 是如何实现分布式的啊）？](high-concurrency/es-architecture.md)
-- [es 写入数据的工作原理是什么啊？es 查询数据的工作原理是什么啊？底层的 lucene 介绍一下呗？倒排索引了解吗？](high-concurrency/es-write-query-search.md)
-- [es 在数据量很大的情况下（数十亿级别）如何提高查询效率啊？](high-concurrency/es-optimizing-query-performance.md)
-- [es 生产集群的部署架构是什么？每个索引的数据量大概有多少？每个索引大概有多少个分片？](high-concurrency/es-production-cluster.md)
 
-### 缓存
-- [在项目中缓存是如何使用的？缓存如果使用不当会造成什么后果？](high-concurrency/why-cache.md)
-- [Redis 和 Memcached 有什么区别？Redis 的线程模型是什么？为什么单线程的 Redis 比多线程的 Memcached 效率要高得多？](high-concurrency/redis-single-thread-model.md)
-- [Redis 都有哪些数据类型？分别在哪些场景下使用比较合适？](high-concurrency/redis-data-types.md)
-- [Redis 的过期策略都有哪些？手写一下 LRU 代码实现？](high-concurrency/redis-expiration-policies-and-lru.md)
-- [如何保证 Redis 高并发、高可用？Redis 的主从复制原理能介绍一下么？Redis 的哨兵原理能介绍一下么？](high-concurrency/how-to-ensure-high-concurrency-and-high-availability-of-redis.md)
-- [Redis 的持久化有哪几种方式？不同的持久化机制都有什么优缺点？持久化机制具体底层是如何实现的？](high-concurrency/redis-persistence.md)
-- [Redis 集群模式的工作原理能说一下么？在集群模式下，Redis 的 key 是如何寻址的？分布式寻址都有哪些算法？了解一致性 hash 算法吗？如何动态增加和删除一个节点？](high-concurrency/redis-cluster.md)
-- [了解什么是 redis 的雪崩、穿透和击穿？Redis 崩溃之后会怎么样？系统该如何应对这种情况？如何处理 Redis 的穿透？](high-concurrency/redis-caching-avalanche-and-caching-penetration.md)
-- [如何保证缓存与数据库的双写一致性？](high-concurrency/redis-consistence.md)
-- [Redis 的并发竞争问题是什么？如何解决这个问题？了解 Redis 事务的 CAS 方案吗？](high-concurrency/redis-cas.md)
-- [生产环境中的 Redis 是怎么部署的？](high-concurrency/redis-production-environment.md)
+
+
+
 
 ### 分库分表
 - [为什么要分库分表（设计高并发系统的时候，数据库层面该如何设计）？用过哪些分库分表中间件？不同的分库分表中间件都有什么优点和缺点？你们具体是如何对数据库如何进行垂直拆分或水平拆分的？](high-concurrency/database-shard.md)
@@ -288,12 +254,9 @@ LXC、第三方厂商如AWS
 ### 高并发系统
 - [如何设计一个高并发系统？](high-concurrency/high-concurrency-design.md)
 
-## 分布式系统
 ### [面试连环炮](distributed-system/distributed-system-interview.md)
-### 系统拆分
-- [为什么要进行系统拆分？如何进行系统拆分？拆分后不用 Dubbo 可以吗？](distributed-system/why-dubbo.md)
 
-### 分布式服务框架
+- [为什么要进行系统拆分？如何进行系统拆分？拆分后不用 Dubbo 可以吗？](distributed-system/why-dubbo.md)
 - [说一下 Dubbo 的工作原理？注册中心挂了可以继续通信吗？](distributed-system/dubbo-operating-principle.md)
 - [Dubbo 支持哪些序列化协议？说一下 Hessian 的数据结构？PB 知道吗？为什么 PB 的效率是最高的？](distributed-system/dubbo-serialization-protocol.md)
 - [Dubbo 负载均衡策略和集群容错策略都有哪些？动态代理策略呢？](distributed-system/dubbo-load-balancing.md)
@@ -326,6 +289,165 @@ LXC、第三方厂商如AWS
 - [深入 Hystrix 线程池隔离与接口限流](high-availability/hystrix-thread-pool-current-limiting.md)
 - [基于 timeout 机制为服务接口调用超时提供安全保护](high-availability/hystrix-timeout.md)
 
+
+
+# 消息总线
+- [ ] ActiveMQ、SQS
+
+- [为什么使用消息队列？消息队列有什么优点和缺点？Kafka、ActiveMQ、RabbitMQ、RocketMQ 都有什么优点和缺点？](high-concurrency/why-mq.md)
+- [如何保证消息队列的高可用？](high-concurrency/how-to-ensure-high-availability-of-message-queues.md)
+- [如何保证消息不被重复消费？（如何保证消息消费的幂等性）](high-concurrency/how-to-ensure-that-messages-are-not-repeatedly-consumed.md)
+- [如何保证消息的可靠性传输？（如何处理消息丢失的问题）](high-concurrency/how-to-ensure-the-reliable-transmission-of-messages.md)
+- [如何保证消息的顺序性？](high-concurrency/how-to-ensure-the-order-of-messages.md)
+- [如何解决消息队列的延时以及过期失效问题？消息队列满了以后该怎么处理？有几百万消息持续积压几小时，说说怎么解决？](high-concurrency/mq-time-delay-and-expired-failure.md)
+- [如果让你写一个消息队列，该如何进行架构设计啊？说一下你的思路。](high-concurrency/mq-design.md)
+- [数据通信(RESTful、RPC、消息队列)相关知识点总结](./system-design/data-communication/summary.md)
+
+## RabbitMQ
+- [消息队列总结](./system-design/data-communication/message-queue.md)
+- [RabbitMQ 入门](./system-design/data-communication/RabbitMQ.md)
+- [RocketMQ的几个简单问题与答案](./system-design/data-communication/RocketMQ-Questions.md)
+
+# 服务器
+- [ ] Tomcat
+- [ ] JBoss
+- [ ] Apache
+- [ ] Nginx、IIS
+
+# 搜索引擎
+## lucene
+## solr
+## es
+- [搜索引擎](high-concurrency/es-introduction.md)
+- [es 的分布式架构原理能说一下么（es 是如何实现分布式的啊）？](high-concurrency/es-architecture.md)
+- [es 写入数据的工作原理是什么啊？es 查询数据的工作原理是什么啊？底层的 lucene 介绍一下呗？倒排索引了解吗？](high-concurrency/es-write-query-search.md)
+- [es 在数据量很大的情况下（数十亿级别）如何提高查询效率啊？](high-concurrency/es-optimizing-query-performance.md)
+- [es 生产集群的部署架构是什么？每个索引的数据量大概有多少？每个索引大概有多少个分片？](high-concurrency/es-production-cluster.md)
+
+
+# 容器
+- [ ] Docker
+* [Docker 入门](./tools/Docker.md)
+* [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
+LXC、第三方厂商如AWS
+
+# 压力测试
+- [ ] JMeter
+* [JMeter入门](./07plugs/FirstJMeter.md)
+- [ ] Blaze Meter
+- [ ] loader.io
+
+# 项目管理（PM）
+
+- [ ] Jira、Asana
+- [ ] Taiga
+- [ ] Trello
+- [ ] Basecamp、Pivotal Tracker
+
+
+## 自动部署
+- Capistrano
+- CodeDeploy
+
+## 持续集成（CI）
+- [ ]  Bamboo
+- [ ]  Hudson
+- [ ] Jenkins
+
+## 配置管理
+- [ ] Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail
+
+## 编排
+- [X] Kubernetes、Core、Apache Mesos、DC/OS
+
+
+
+
+## JAVA
+- [深入理解JVM](2019/深入理解JVM.md)
+- [jvm监控命令](JVM/jvm监控命令.md)
+- [(深入理解JUC)什么是AQS队列同步器](https://blog.csdn.net/u010391342/article/details/88657920)
+- [(深入理解JUC)分析ReentrantLock源码](https://blog.csdn.net/u010391342/article/details/88686965)
+- [(深入理解JUC)分析CountDownLatch源码](2019/分析CountDownLatch源码.md)
+- [(深入理解JUC)分析CyclicBarrier同步屏障源码](2019/CyclicBarrier.md)
+- [(深入理解JUC)分析Semaphore信号量源码](2019/Semaphore.md)
+- [(深入理解JUC)ThreadLocal源码](https://blog.qinxuewu.club/2019/03/28/java/shen-ru-li-jie-threadlocal-yuan-ma)
+- [(深入理解JUC)ConcurrentLinkedQueue源码](https://blog.qinxuewu.club/2019/03/29/java/shen-ru-li-jie-concurrentlinkedqueue-yuan-ma)
+- [volatile的内存语义](https://blog.qinxuewu.club/2019/04/05/java/volatile-de-nei-cun-yu-yi)
+
+
+
+
+## 分布式
+- [ELK分布式日志平台搭建](https://blog.csdn.net/u010391342/article/details/82895385)
+- [Netty入门(一)HelloWorld程序编写](https://blog.csdn.net/u010391342/article/details/83011198)
+- [Netty入门(二)TCP粘包与拆包问题处理](https://blog.csdn.net/u010391342/article/details/83011294)
+- [基于Zookeeper实现分布式锁和队列](https://blog.csdn.net/u010391342/article/details/82192933)
+- [ElasticSearch本地快速搭建与使用](https://blog.csdn.net/u010391342/article/details/82117389)
+
+
+## 设计模式
+- [创建型模式](2019/创建型模式.md)
+- [结构型模式](2019/结构型模式.md)
+- [行为型模式](2019/行为型模式.md)
+
+
+
+## Storm系列
+- [(一)环境搭建安装](storm/storm01.md)
+- [(二)常用shell命令](storm/storm02.md)
+- [(三)Java编写第一个本地模式demo](storm/storm03.md)
+- [(四)并行度和流分组](storm/storm04.md)
+- [(五)DRPC远程调用](storm/storm05.md)
+- [(六)Trident使用](storm/storm06.md)
+- [(七)集成kafka](storm/storm07.md)
+
+## hadoop系列
+- [(一)伪分布式搭建](hadoop/hadoop01.md)
+- [(二)HDFS shell操作](hadoop/hadoop02.md)
+- [(三)HDFS的java api](hadoop/hadoop03.md)
+- [(四)MapReduce分布式计算利器](hadoop/hadoop04.md)
+- [HBase安装以及基本操作](hadoop/hbase01.md)
+- [HBase之Java API 操作](hadoop/hbase02.md)
+
+## 知识点总结
+- [多线程和JVM知识总结](2019/多线程和JVM知识总结.md)
+- [JAVA核心技术36讲笔记](2019/JAVA核心技术36讲.md)
+- [MySQL实战45讲笔记](2019/MySQL实战45讲笔记.md)
+- [高性能MySQL笔记](2019/高性能MySQL.md)
+
+- [redis面试专题.md](其它/redis面试.md)
+- [spring面试专题.md](其它/spring.md)
+
+
+## 随笔
+- [docsify一个神奇的文档生成工具](其它/docsify.md)
+- [Linux服务命令](其它/Linxu服务命令.md)
+- [PMP备考练习题](2019/PMP练习题.md)
+- [Docker学习笔记](2019/docker笔记.md)
+- [Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
+- [图解LeetCode](https://github.com/ZXZxin/ZXBlog/blob/master/%E5%88%B7%E9%A2%98/LeetCode/LeetCodeSolutionIndex.md)
+- [图解剑指Offer](https://github.com/ZXZxin/ZXBlog/tree/master/%E5%88%B7%E9%A2%98/Other/%E5%89%91%E6%8C%87Offer)
+- [互联网Java工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
+- [pandownload百度网盘不限速下载](http://pandownload.com/index.html)
+
+
+# Todo
+- 多线程
+- 并发编程
+- 所得深度化
+- 网络通讯
+- maven 私服
+-fastdfs
+logstash
+
+
+ridis 主从复制
+高可用
+ 集群，缓存雪崩
+ 秒杀解决方案
+
+ mq集群
 ### 高可用系统
 - 如何设计一个高可用系统？
 
@@ -340,23 +462,33 @@ LXC、第三方厂商如AWS
 - 如何进行降级？
 
 
-## 微服务架构
-- [微服务架构整个章节内容属额外新增，后续抽空更新，也欢迎读者们参与补充完善](https://github.com/doocs/advanced-java)
-- [关于微服务架构的描述](micro-services/microservices-introduction.md)
 
-### Spring Cloud 微服务架构
-- 什么是微服务？微服务之间是如何独立通讯的？
-- Spring Cloud 和 Dubbo 有哪些区别？
-- Spring Boot 和 Spring Cloud，谈谈你对它们的理解？
-- 什么是服务熔断？什么是服务降级？
-- 微服务的优缺点分别是什么？说一下你在项目开发中碰到的坑？
-- 你所知道的微服务技术栈都有哪些？
-- Eureka 和 Zookeeper 都可以提供服务注册与发现的功能，它们有什么区别？
-- ......
+## 脚本语言
+- [ ] python、ruby、shell
 
-## 学习交流
+## 日志管理
+- [ ] ELK
+- [ ] Logentries
+
+## 系统监控
+- [ ] Datadog、Graphite、Icinga、Nagios
+
+## 性能监控
+- [ ] AppDynamics、New Relic、Splunk
+
+## 预警：
+- [ ] PagerDuty
+- [ ] pingdom、厂商自带如AWS SNS
+
+## HTTP加速器
+- [ ] Varnish
+
+
+
+# 学习交流
 QQ群：874514813
-## 特别鸣谢
+
+# 特别鸣谢
 > 该静态文档使用
 - docsify
 
