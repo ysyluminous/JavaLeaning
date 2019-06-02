@@ -23,9 +23,12 @@
 </p>
 
 <h1 align="center">
-  <a href ="https://ysyluminous.github.io/JavaLeaning/">文档在线阅读</a>
+  <a href ="https://ysyluminous.github.io/JavaLeaning/">Java构架师之路在线阅读</a>
 </h2>
+
   <p align="center">
+  极佳阅读体验，全文检索，侧边导航。
+  <br>
     <a href="https://ysyluminous.github.io/JavaLeaning">
       Github版本，更新快，速度慢
     </a>
@@ -33,7 +36,7 @@
     <a href="https://ysygitee.gitee.io/javaleaning">
       Gitee版本，更新慢，速度慢
     </a>
-    <br>极佳阅读体验，全文检索，侧边导航。
+
 </p>
 
 
@@ -48,15 +51,15 @@
 *  **对于非 Java 初学者来说：** 本文档更适合回顾知识，准备面试，搞清面试应该把重心放在那些问题上。要搞清楚这个道理：提前知道那些面试常见，不是为了背下来应付面试，而是为了让你可以更有针对的学习重点。
 
 ### QQ群
+[●欢迎点击加入QQ群874514813学习交流](https://jq.qq.com/?_wv=1027&k=5KVEQ2o)
 
-利用 docsify 生成文档部署在 Github pages: [docsify 官网介绍](https://docsify.js.org/#/)
 
-### 关于转载
+### 免责声明
 
-如果你需要转载本仓库的一些文章到自己的博客的话，记得注明原文地址就可以了。
-
-### 如何对该开源文档进行贡献
-
-1. 笔记内容大多是手敲，所以难免会有笔误，你可以帮我找错别字。
-2. 很多知识点我可能没有涉及到，所以你可以对其他知识点进行补充。
-3. 现有的知识点难免存在不完善或者错误，所以你可以对已有知识点的修改/补充。
+> 本仓库内容基础内容来自互联网，仅限个人学习交流，24小时内删除。
+- [架构师的成长之路](https://github.com/csy512889371/learnDoc)
+- [JavaGuide](https://github.com/Snailclimb/JavaGuide)
+- [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
+- [Java的知识学习总结+ JDK源码阅读笔记](https://github.com/a870439570/interview-docs)
+- [interviews](https://github.com/kdn251/interviews/blob/master/README-zh-cn.md)
+- [JCSprout](https://github.com/crossoverJie/JCSprout)

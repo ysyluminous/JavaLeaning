@@ -1,6 +1,3 @@
-https://github.com/doocs/advanced-java
-
-
 
 # Github指南
 ## 通用
@@ -25,7 +22,7 @@ https://github.com/a870439570/interview-docs/tree/master
 
 >- [JavaGuide](https://github.com/Snailclimb/JavaGuide)
 >
->  一份涵盖大部分Java程序员所需要掌握的核心知识。 
+>  一份涵盖大部分Java程序员所需要掌握的核心知识。
 
 - [Java的知识学习总结+ JDK源码阅读笔记](https://github.com/a870439570/interview-docs)
 
@@ -34,17 +31,14 @@ https://github.com/a870439570/interview-docs/tree/master
 > 软件工程技术面试个人指南。
 
 >- [JCSprout](https://github.com/crossoverJie/JCSprout)
-> 
+>
 > 处于萌芽阶段的 Java 核心知识库 star: 31k
 
 
+>- [technology-talk](https://github.com/aalansehaiyang/technology-talk)
+>
+> 汇总java生态圈常用技术框架、开源中间件，系统架构、项目管理、经典架构案例、数据库、常用三方库、线上运维等知识。
 
-
-4. technology-talk
-Github地址：
-https://github.com/aalansehaiyang/technology-talk
-star: 4.2k
-介绍: 汇总java生态圈常用技术框架、开源中间件，系统架构、项目管理、经典架构案例、数据库、常用三方库、线上运维等知识。
 5. fullstack-tutorial
 Github地址：
 https://github.com/frank-lam/fullstack-tutorial
@@ -71,7 +65,7 @@ https://github.com/ZhongFuCheng3y/3y
 
 
 ### 3. advanced-java
-
+111111
 - **Github地址**：[https://github.com/doocs/advanced-java](https://github.com/doocs/advanced-java)
 - **star**: 3.3k
 - **介绍**: 互联网 Java 工程师进阶知识完全扫盲
@@ -137,7 +131,7 @@ Star 数高达 4w+的 CS 笔记-CS-Notes：https://github.com/CyC2018/CS-Notes
 - **Github地址**：[https://github.com/apache/incubator-dubbo](https://github.com/apache/incubator-dubbo)
 - **star**: 23.6k
 - **介绍**:  阿里开源的一个基于Java的高性能开源RPC框架。
-- 
+-
 ###  apollo
 
 - **Github地址**：[https://github.com/ctripcorp/apollo](https://github.com/ctripcorp/apollo)
@@ -146,7 +140,7 @@ Star 数高达 4w+的 CS 笔记-CS-Notes：https://github.com/CyC2018/CS-Notes
 
 
 
-#### Java博客 
+#### Java博客
 
 
 ### 10. symphony
@@ -164,7 +158,7 @@ Star 数高达 4w+的 CS 笔记-CS-Notes：https://github.com/CyC2018/CS-Notes
 #### 在线考试项目
 https://github.com/remmlqw/exam-student
 > Vue.js2.5 + vue-router + Element UI
- 
+
 https://github.com/anqi270024/jexam
 > spring boot freemarker  bootstrap
 
@@ -182,13 +176,44 @@ https://github.com/kujian/frontendDaily
 > H5在线播放器
 
 
+### 5. fullstack-tutorial
+
+- Github地址： [https://github.com/frank-lam/fullstack-tutorial](https://github.com/frank-lam/fullstack-tutorial)
+- star: 2.8k
+- 介绍:  Full Stack Developer Tutorial，后台技术栈/全栈开发/架构师之路，秋招/春招/校招/面试。 from zero to hero。
+- 概览：
+
+  ![fullstack-tutorial](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-12-24/67104534.jpg)
+
+### 6. java-bible
+
+- Github地址：[https://github.com/biezhi/java-bible](https://github.com/biezhi/java-bible)
+- star: 1.9k
+- 介绍:  这里记录了一些技术摘要，部分文章来自网络，本项目的目的力求分享精品技术干货，以Java为主。
+- 概览：
+
+  ![ java-bible](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-12-24/90223588.jpg)
+
+### 7. EasyJob
+
+- Github地址：[https://github.com/it-interview/EasyJob](https://github.com/it-interview/EasyJob)
+- star: 1.9k
+- 介绍:  互联网求职面试题、知识点和面经整理。
+
+
+1. Star 数高达 4w+的 CS 笔记-CS-Notes：[https://github.com/CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes)
+2. 后端（尤其是Java）程序员的 Linux 学习仓库-Linux-Tutorial：[https://github.com/judasn/Linux-Tutorial](https://github.com/judasn/Linux-Tutorial)( Star:4.6k)
+3. 两个算法相关的仓库，刷 Leetcode 的小伙伴必备：①awesome-java-leetcode：[https://github.com/Blankj/awesome-java-leetcode](https://github.com/Blankj/awesome-java-leetcode)；②LintCode：[https://github.com/awangdev/LintCode](https://github.com/awangdev/LintCode)
+
+
+
 
 #### 大牛仓库
 [https://github.com/shengxinjing?tab=repositories](https://github.com/shengxinjing?tab=repositories)
 
 
 
-#### 
+####
 [黑苹果长期维护机型EFI及安装教程整理](https://github.com/daliansky/Hackintosh)
 
 

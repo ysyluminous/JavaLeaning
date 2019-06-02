@@ -60,7 +60,6 @@
 ## 异常
 * [Exception](./02JavaBase\Exception/Exception.md)
 
-
 ## 容器
 
 * [常见面试题](./02JavaBase/collection/Java集合框架常见面试题.md)
@@ -84,7 +83,8 @@
 * [四 类文件结构](./02JavaBase/jvm/类文件结构.md)
 * [五 类加载过程](./02JavaBase/jvm/类加载过程.md)
 * [六 类加载器](./02JavaBase/jvm/类加载器.md)
-
+- [深入理解JVM](2019/深入理解JVM.md)
+- [jvm监控命令](JVM/jvm监控命令.md)
 ## I/O
 
 * [BIO,NIO,AIO 总结 ](./02JavaBase/BIO-NIO-AIO.md)
@@ -98,6 +98,18 @@
 
 - [x] [BIO,NIO,AIO 总结 ](./java/BIO-NIO-AIO.md)
 
+
+## 高级
+
+- [(深入理解JUC)什么是AQS队列同步器](https://blog.csdn.net/u010391342/article/details/88657920)
+- [(深入理解JUC)分析ReentrantLock源码](https://blog.csdn.net/u010391342/article/details/88686965)
+- [(深入理解JUC)分析CountDownLatch源码](2019/分析CountDownLatch源码.md)
+- [(深入理解JUC)分析CyclicBarrier同步屏障源码](2019/CyclicBarrier.md)
+- [(深入理解JUC)分析Semaphore信号量源码](2019/Semaphore.md)
+- [(深入理解JUC)ThreadLocal源码](https://blog.qinxuewu.club/2019/03/28/java/shen-ru-li-jie-threadlocal-yuan-ma)
+- [(深入理解JUC)ConcurrentLinkedQueue源码](https://blog.qinxuewu.club/2019/03/29/java/shen-ru-li-jie-concurrentlinkedqueue-yuan-ma)
+- [volatile的内存语义](https://blog.qinxuewu.club/2019/04/05/java/volatile-de-nei-cun-yu-yi)
+
 ## 编程规范
 
 - [Java 编程规范](./02JavaBase/Java编程规范.md)
@@ -106,6 +118,10 @@
 ### 设计模式
 - [设计模式系列文章](./system-design/设计模式.md)
 - [设计模式](02JavaBase/DesignPattern/DesignPattern.md)
+- [创建型模式](2019/创建型模式.md)
+- [结构型模式](2019/结构型模式.md)
+- [行为型模式](2019/行为型模式.md)
+
 
 # JavaWeb
 - jsp
@@ -214,8 +230,6 @@
 - [ ] Consul
 
 
-
-
 # 面试指南
 ## 实习生必读
 * [揭露培训机构以招聘名义变相招生的欺诈套路！莫被骗！](https://blog.csdn.net/qq_33840251/article/details/90348984)
@@ -235,11 +249,6 @@
 - [5面阿里,终获offer(2018年秋招)](./essential-content-for-interview/BATJrealInterviewExperience/5面阿里,终获offer.md)
 - [蚂蚁金服2019实习生面经总结(已拿口头offer)](./essential-content-for-interview/BATJrealInterviewExperience/蚂蚁金服实习生面经总结(已拿口头offer).md)
 - [2019年蚂蚁金服、头条、拼多多的面试总结](./essential-content-for-interview/BATJrealInterviewExperience/2019alipay-pinduoduo-toutiao.md)
-
-
-
-
-
 
 
 ### 分库分表
@@ -289,8 +298,6 @@
 - [深入 Hystrix 线程池隔离与接口限流](high-availability/hystrix-thread-pool-current-limiting.md)
 - [基于 timeout 机制为服务接口调用超时提供安全保护](high-availability/hystrix-timeout.md)
 
-
-
 # 消息总线
 - [ ] ActiveMQ、SQS
 
@@ -324,11 +331,12 @@
 - [es 在数据量很大的情况下（数十亿级别）如何提高查询效率啊？](high-concurrency/es-optimizing-query-performance.md)
 - [es 生产集群的部署架构是什么？每个索引的数据量大概有多少？每个索引大概有多少个分片？](high-concurrency/es-production-cluster.md)
 
-
 # 容器
 - [ ] Docker
 * [Docker 入门](./tools/Docker.md)
 * [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
+- [Docker学习笔记](2019/docker笔记.md)
+
 LXC、第三方厂商如AWS
 
 # 压力测试
@@ -343,7 +351,6 @@ LXC、第三方厂商如AWS
 - [ ] Taiga
 - [ ] Trello
 - [ ] Basecamp、Pivotal Tracker
-
 
 ## 自动部署
 - Capistrano
@@ -360,37 +367,12 @@ LXC、第三方厂商如AWS
 ## 编排
 - [X] Kubernetes、Core、Apache Mesos、DC/OS
 
-
-
-
-## JAVA
-- [深入理解JVM](2019/深入理解JVM.md)
-- [jvm监控命令](JVM/jvm监控命令.md)
-- [(深入理解JUC)什么是AQS队列同步器](https://blog.csdn.net/u010391342/article/details/88657920)
-- [(深入理解JUC)分析ReentrantLock源码](https://blog.csdn.net/u010391342/article/details/88686965)
-- [(深入理解JUC)分析CountDownLatch源码](2019/分析CountDownLatch源码.md)
-- [(深入理解JUC)分析CyclicBarrier同步屏障源码](2019/CyclicBarrier.md)
-- [(深入理解JUC)分析Semaphore信号量源码](2019/Semaphore.md)
-- [(深入理解JUC)ThreadLocal源码](https://blog.qinxuewu.club/2019/03/28/java/shen-ru-li-jie-threadlocal-yuan-ma)
-- [(深入理解JUC)ConcurrentLinkedQueue源码](https://blog.qinxuewu.club/2019/03/29/java/shen-ru-li-jie-concurrentlinkedqueue-yuan-ma)
-- [volatile的内存语义](https://blog.qinxuewu.club/2019/04/05/java/volatile-de-nei-cun-yu-yi)
-
-
-
-
 ## 分布式
 - [ELK分布式日志平台搭建](https://blog.csdn.net/u010391342/article/details/82895385)
 - [Netty入门(一)HelloWorld程序编写](https://blog.csdn.net/u010391342/article/details/83011198)
 - [Netty入门(二)TCP粘包与拆包问题处理](https://blog.csdn.net/u010391342/article/details/83011294)
 - [基于Zookeeper实现分布式锁和队列](https://blog.csdn.net/u010391342/article/details/82192933)
 - [ElasticSearch本地快速搭建与使用](https://blog.csdn.net/u010391342/article/details/82117389)
-
-
-## 设计模式
-- [创建型模式](2019/创建型模式.md)
-- [结构型模式](2019/结构型模式.md)
-- [行为型模式](2019/行为型模式.md)
-
 
 
 ## Storm系列
@@ -424,13 +406,13 @@ LXC、第三方厂商如AWS
 - [docsify一个神奇的文档生成工具](其它/docsify.md)
 - [Linux服务命令](其它/Linxu服务命令.md)
 - [PMP备考练习题](2019/PMP练习题.md)
-- [Docker学习笔记](2019/docker笔记.md)
+
 - [Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
 - [图解LeetCode](https://github.com/ZXZxin/ZXBlog/blob/master/%E5%88%B7%E9%A2%98/LeetCode/LeetCodeSolutionIndex.md)
 - [图解剑指Offer](https://github.com/ZXZxin/ZXBlog/tree/master/%E5%88%B7%E9%A2%98/Other/%E5%89%91%E6%8C%87Offer)
 - [互联网Java工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [pandownload百度网盘不限速下载](http://pandownload.com/index.html)
-
+- [常用第三方库](./00recommend/threeLab.md)
 
 # Todo
 - 多线程

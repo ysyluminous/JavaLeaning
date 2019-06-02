@@ -5,4 +5,4 @@
 <h1 align="center">Java构架师之路</h1>
 
 [开始阅读](#导论)
-[GitHub](<https://ysyluminous.github.io/JavaLeaning/>)
+[GitHub](<https://github.com/ysyluminous/JavaLeaning>)
