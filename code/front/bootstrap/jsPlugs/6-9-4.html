@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>按钮插件方法</title>
+	</head>
+	<body>
+		<div class="container"style="padding: 50px 50px 10px;">
+		<h2>点击每个按钮查看方法效果</h2>
+		<h4> .button('toggle') 方法</h4>
+		<button id="btnTog" class="btn btn-primary" >初始状态</button>
+		
+		<h4>.button('loading') 方法</h4>
+		<button id="btnLoad" class="btn btn-primary" 
+        data-loading-text="Loading...">初始状态
+    	</button>
+		 
+		<h4> .button('reset') 方法</h4>
+		<button id="btnReset" class="btn btn-primary" 
+        data-loading-text="正在加载..." data-complete-text="加载完成">初始状态
+    	</button>
+		 
+		<h4> .button(string) 方法</h4>
+		<button id="btnStr" class="btn btn-primary"  
+    data-complete-text="Loading finished">请点击我
+		</button>
+		<script>
+			$(function () {
+        		$("#btntTg").button('toggle');
+        	});
+    		$(function() { 
+        		$("#btnLoad").button('loading');
+        	});    	
+    		$(function() { 
+        		$("#btnReset").click(function(){
+        			$(this).button('loading').delay(1000).queue(function() {
+                	$(this).button('reset');
+            		});        
+        		});
+            });        
+        	$(function() { 
+        	$("#btnStr").click(function(){
+            	$(this).button('loading').delay(1000).queue(function() {
+                	$(this).button('complete');
+            	});        
+        	});
+    	});
+		</script>
+	</div>
+	
+	</body>
+</html>

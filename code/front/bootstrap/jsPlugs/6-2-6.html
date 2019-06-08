@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<title>data-backdrop属性</title>
+	</head>
+	<body>
+	<div class="container">
+		<button class="btn btn-primary" data-toggle="modal"  data-target="#myModal-sm" data-backdrop="false">data-backdrop属性</button>		
+		<div class="modal fade" id="myModal-sm" >
+    		<div class="modal-dialog modal-sm">
+        		<div class="modal-content">
+            		<div class="modal-header">
+                		<button type="button" class="close" data-dismiss="modal">&times;</button>
+                		<h4 class="modal-title"> 按钮触发 </h4>
+            		</div>
+            		<div class="modal-body">
+            			<p>data-backdrop属性true显示背景,如果为false不显示背景</p>
+            		</div>
+            		<div class="modal-footer">
+                		<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                		<button type="button" class="btn btn-primary">保存</button>
+            		</div>
+        		</div>
+    		</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

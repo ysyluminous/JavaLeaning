@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>附加导航</title>
+	</head>
+	<body data-spy="scroll" data-target="#myAffix">
+	<div class="container">
+		<div class="jumbotron">
+        	<h1>Bootstrap Affix</h1>
+    	</div>
+    	<div class="row">
+        	<div class="col-xs-3" id="myAffix">
+		 		<ul class="nav nav-tabs nav-stacked" id="myNav" >
+                	<li class="active"><a href="#section-1">第一部分</a></li>
+                	<li><a href="#section-2">第二部分</a></li>
+                	<li><a href="#section-3">第三部分</a></li>
+                	<li><a href="#section-4">第四部分</a></li>
+                	<li><a href="#section-5">第五部分</a></li>
+         		</ul>
+         	</div>
+	
+	 		<div class="col-xs-9">
+            <h2 id="section-1">第一部分</h2>
+            	<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。</p>
+            	<p>Bootstrap 插件全部依赖 jQuery
+请注意，Bootstrap 的所有 JavaScript 插件都依赖 jQuery，因此 jQuery 必须在 Bootstrap 之前引入，就像在基本模版中所展示的一样。在 bower.json 文件中 列出了 Bootstrap 所支持的 jQuery 版本。</p>
+            <hr>
+            <h2 id="section-2">第二部分</h2>
+            <p>Bootstrap 源码包含了预先编译的 CSS、JavaScript 和图标字体文件，并且还有 LESS、JavaScript 和文档的源码。</p>
+            <p>less/、js/ 和 fonts/ 目录分别包含了 CSS、JS 和字体图标的源码。dist/ 目录包含了上面所说的预编译 Bootstrap 包内的所有文件。docs/ 包含了所有文档的源码文件，examples/ 目录是 Bootstrap 官方提供的实例工程。除了这些，其他文件还包含 Bootstrap 安装包的定义文件、许可证文件和编译脚本等。</p>
+            <hr>
+            <h2 id="section-3">第三部分</h2>
+            <p>Bootstrap 使用 Grunt 作为编译系统，并且对外提供了一些方便的方法用于编译整个框架。下面讲解的就是如何编译源码、运行测试用例等内容。</p>
+            <p>安装 Grunt 前，你需要首先下载并安装 node.js （npm 已经包含在内）。npm 是 node packaged modules 的简称，它的作用是基于 node.js 管理扩展包之间的依赖关系。
+然后在命令行中输入以下命令：
+在全局环境中安装 grunt-cli ：npm install -g grunt-cli 。
+进入 /bootstrap/ 根目录，然后执行 npm install 命令。npm 将读取 package.json 文件并自动安装此文件中列出的所有被依赖的扩展包。</p>
+            <p>上述步骤完成后，你就可以运行 Bootstrap 所提供的各个 Grunt 命令了。</p>
+            <hr>
+            <h2 id="section-4">第四部分</h2>
+            <p>使用以下给出的这份超级简单的 HTML 模版，或者修改这些实例。我们强烈建议你对这些实例按照自己的需求进行修改，而不要简单的复制、粘贴。</p>
+            <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
+            <hr>
+            <h2 id="section-5">第五部分</h2>
+            <p>以下实例全部基于前面所讲的基本模板并配合 Bootstrap 的众多组件开发而成。我们鼓励你根据自身项目的需要对 Bootstrap 进行定制和修改。</p>
+        	<p>Bootstrap 有成熟、强大的社区。如果你希望随时获取 Bootstrap 的最新消息，请关注以下社区资源。</p>
+	 	</div>
+    </div>	
+	</div>
+	<script>
+	$(document).ready(function(){
+    $("#myNav").affix({
+        offset: { 
+            top: 125 
+      	}
+    	});
+	});
+</script>
+	</body>
+</html>

@@ -48,6 +48,7 @@
 - [leetcode数据库算法题](leetcode/sql算法.md)
 
 # Java基础
+* [基础面试汇总](./02JavaBase/baseInterview/baseInterview.md)
 
 ## 基础
 * [Object类、常用API](./02JavaBase/Object类、常用API.md)
@@ -231,6 +232,9 @@
 
 
 # 面试指南
+
+- [面试汇总](06interview/interviewSum.md)
+
 ## 实习生必读
 * [揭露培训机构以招聘名义变相招生的欺诈套路！莫被骗！](https://blog.csdn.net/qq_33840251/article/details/90348984)
 ## 备战面试
@@ -332,12 +336,13 @@
 - [es 生产集群的部署架构是什么？每个索引的数据量大概有多少？每个索引大概有多少个分片？](high-concurrency/es-production-cluster.md)
 
 # 容器
-- [ ] Docker
+## Docker
 * [Docker 入门](./tools/Docker.md)
 * [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
 - [Docker学习笔记](2019/docker笔记.md)
 
-LXC、第三方厂商如AWS
+- [ ] LXC
+- [ ] AWS
 
 # 压力测试
 - [ ] JMeter
@@ -353,16 +358,17 @@ LXC、第三方厂商如AWS
 - [ ] Basecamp、Pivotal Tracker
 
 ## 自动部署
+- Jenkins。
 - Capistrano
 - CodeDeploy
 
 ## 持续集成（CI）
 - [ ]  Bamboo
 - [ ]  Hudson
-- [ ] Jenkins
+- [X] Jenkins
 
 ## 配置管理
-- [ ] Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail
+- [X] Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail
 
 ## 编排
 - [X] Kubernetes、Core、Apache Mesos、DC/OS

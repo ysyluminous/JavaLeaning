@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+    <!-- 磁盘缓存位置 -->
+    <diskStore path="java.io.tmpdir/ehcache"/>
+    <!-- 默认缓存 -->
+    <!--
+      eternal是否永久缓存，
+      timeToIdleSeconds最大空闲时间
+      timeToLiveSeconds存活时间
+      maxEntriesLocalDisk内存里存多少之后往磁盘里面存。
+      diskExpiryThreadIntervalSeconds磁盘进程运行间隔时间。
+      memoryStoreEvictionPolicy清除缓存策略
+      -->
+    <defaultCache
+            maxEntriesLocalHeap="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            maxEntriesLocalDisk="10000000"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+    <!-- helloworld缓存 -->
+    <!--自定义缓存
+    name是一个标示，
+    maxElementsInMemory：内存中存在最大的元素个数
+    eternal是否永久不失效。
+    timeToIdleSeconds最大空闲时间，
+    timeToLiveSeconds最大存活时间，
+    overflowToDisk：是否开启内存不够往磁盘里存。
+    memoryStoreEvictionPolicy：淘汰策略
+    -->
+    <cache name="HelloWorldCache"
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="5"
+           timeToLiveSeconds="5"
+           overflowToDisk="false"
+           memoryStoreEvictionPolicy="LRU"/>
+</ehcache>
+

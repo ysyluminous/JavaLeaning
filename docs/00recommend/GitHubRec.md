@@ -65,12 +65,12 @@ https://github.com/ZhongFuCheng3y/3y
 
 
 ### 3. advanced-java
-111111
+
 - **Github地址**：[https://github.com/doocs/advanced-java](https://github.com/doocs/advanced-java)
 - **star**: 3.3k
 - **介绍**: 互联网 Java 工程师进阶知识完全扫盲
 
-
+- https://github.com/xingshaocheng/architect-awesome
 
 
 Star 数高达 4w+的 CS 笔记-CS-Notes：https://github.com/CyC2018/CS-Notes

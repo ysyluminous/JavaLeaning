@@ -234,7 +234,7 @@ public class ThreadMXBeanTest {
 > 需求是每个对象一个线程，分别在每个线程里计算各自的数据，最终等到所有线程计算完毕，我还需要将每个有共通的对象进行合并，所以用它很合适。
 
 #### 并发包中的ConcurrentLinkedQueue和LinkedBlockingQueue有什么区别？
-![线程安全队列一览](https://img-blog.csdnimg.cn/20190409124720516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAzOTEzNDI=,size_16,color_FFFFFF,t_70)
+![线程安全队列一览](https://img-blog.csdnimg.cn/20190409124720516.png)
 * `Concurrent`类型基于`lock-free`，在常见的多线程访问场景，一般可以提供较高吞吐量。而`LinkedBlockingQueue`内部则是`基于锁`，并提供了`BlockingQueue`的等待性方法。
 * `ArrayBlockingQueue`是最典型的的有界队列，其内部以`fnal`的数组保存数据，数组的大小就决定了队列的边界，所以我们在创建ArrayBlockingQueue时，都要指定容量
 * `LinkedBlockingQueue`，容易被`误解为无边界`，但其实其行为和内部代码都是`基于有界的逻辑实现`的，只不过如果我们没有在创建队列时就指定容量，那么其容量限制就自动被设置为`Integer.MAX_VALUE`，成为了无界队列。
@@ -327,7 +327,7 @@ Executors目前提供了5种不同的线程池创建配置：
 * [JConsole官方教程](https://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html)。我这里特别推荐[Java Mission Control（JMC）](https://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html)，这是一个非常强大的工具，不仅仅能够使用JMX进行普通的管理、监控任务，还可以配合Java Flight Recorder（JFR）技术，以非常低的开销，收集和分析JVM底层的Profling和事件等信息。
 
 **堆内部是什么结构？**
-![](https://img-blog.csdnimg.cn/20190409174432758.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAzOTEzNDI=,size_16,color_FFFFFF,t_70) 
+![](https://img-blog.csdnimg.cn/20190409174432758.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAzOTEzNDI=,size_16,color_FFFFFF,t_70)
 你可以看到，按照通常的GC年代方式划分， Java堆内分为：
 
 **新生代**

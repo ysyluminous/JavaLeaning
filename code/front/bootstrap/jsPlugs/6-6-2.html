@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>Tab标签页</title>
+	</head>
+	<body>
+		
+		
+<div style="padding: 100px 100px 10px;">
+	
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="left" title="左侧的 Tooltip">
+    左侧的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="top"  title="顶部的 Tooltip">
+    顶部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="bottom" title="底部的 Tooltip">
+    底部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="right" title="右侧的 Tooltip">
+    右侧的 Tooltip
+</button>
+	</div>
+	<script>
+		$(function () { 
+    	$('[data-toggle="tooltip"]').on("show.bs.tooltip", function () {
+        	alert("show.bs.tooltip");
+    	}).on("show.bs.tooltip", function () {
+        	alert("shown.bs.tooltip");
+        }).on("hide.bs.tooltip", function () {
+        	alert("hide.bs.tooltip");
+        }).on("hidden.bs.tooltip", function () {
+        	alert("hidden.bs.tooltip");
+   		});
+   	});
+    	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
+	
+	</body>
+</html>

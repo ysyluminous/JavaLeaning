@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>Tab标签页</title>
+	</head>
+	<body>
+	<div class="container">
+		<ul class="nav nav-tabs" id="tabNav">
+			<li class="active"><a href="#news" >新闻</a></li>
+			<li><a href="#PE" >体育</a></li>
+			<li><a href="#ENT">娱乐</a></li>
+			<li><a href="#cars" >汽车</a></li>
+		</ul>
+		<br />
+		<div class="tab-content">
+			<div class="tab-pane active" id="news">
+				<p><a href="#">习近平用这支“指挥棒” 引领中国发展前行</a><span class="pull-right">2017-9-17</span></p>
+			    <p><a href="#">崔天凯：不允许任何人把核武器引进台湾</a><span class="pull-right">2017-9-17</span></p>
+			    <p><a href="#">香港政务司长：“港独”违反《基本法》 没有讨论空间</a><span class="pull-right">2017-9-17</span></p>
+			</div>
+			<div class="tab-pane" id="PE">
+			    <p><a href="#">中超-双外援建功汪嵩救主 恒大2-2苏宁</a><span class="pull-right">2017-9-17</span></p>
+			    <p><a href="#">中甲-永昌3-0保留冲超希望 一方0-1绿城</a><span class="pull-right">2017-9-17</span></p>
+			    <p><a href="#">美媒预测MVP无哈登威少 伦纳德大热门</a><span class="pull-right">2017-9-17</span></p>
+			</div>
+			<div class="tab-pane " id="ENT">
+			   娱乐的内容
+			</div>
+			<div class="tab-pane " id="cars">
+			   汽车的内容
+			</div>
+		</div>
+	</div>
+	<script>
+		$("#tabNav a").click(function(e){
+			e.preventDefault()
+			$(this).tab("show");
+		});		
+	</script>
+	
+	</body>
+</html>

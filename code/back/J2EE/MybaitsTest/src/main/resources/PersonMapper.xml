@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.yaosiyuan.mapper.PersonMapper">
+	<sql id="consutomsql">
+		<if test="customPerson !=null">
+			<if test="customPerson.name != null and customPerson.name !=''">
+				and name = #{customPerson.name}
+			</if>
+			<if test="customPerson.birthday !=null and customPerson.birthday !=''">
+				and birthday = #{customPerson.birthday}
+			</if>
+		</if>
+	</sql>
+	<select id = "queryPersonByVo" parameterType="PersonVo" resultType="Person">
+	select * from Person
+		<where>
+			<include refid="consutomsql"></include>
+		</where>
+	</select>
+
+
+
+
+	<select id="querypersonbyid" parameterType="int" resultType="Person">
+	select  id,name,age,birthday,address from Person where id= #{value}
+	</select>
+	
+	
+	<!-- 模糊查询 like "%${value}%" --> 
+	<select id="querypersonbyName" parameterType="java.lang.String" resultType="Person">
+	select  id,name,age,birthday,address from Person where name like "%${value}%"
+	</select>
+	
+	
+	<insert id="insertPerson" parameterType="Person">
+	 	<selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+	 		SELECT LAST_INSERT_ID()
+	 	</selectKey>
+	 	insert into Person(name,age,address,birthday) value(#{name},#{age},#{address},#{birthday})  
+	</insert>
+
+	
+	<delete id="deletePersonById" parameterType="java.lang.Integer">  
+        <!-- 删除 用户 根据id删除用户，需要输入 id值 -->  
+        delete from person where  
+        id=#{id}  
+    </delete>  
+	
+	<delete id ="upadtePersonById" parameterType="Person">
+		update Person set name=#{name},age=#{age},birthday=#{birthday},address=#{address} where id = #{id}
+	</delete>
+	
+</mapper>

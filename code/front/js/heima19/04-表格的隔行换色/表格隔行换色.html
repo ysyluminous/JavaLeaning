@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			1. 确定事件: 文档加载完成 onload
+			2. 事件要触发函数: init()
+			3. 函数:操作页面的元素
+					要操作表格中每一行
+					动态的修改行的背景颜色
+		-->
+		<script >
+			function init(){
+				//得到表格
+				var tab = document.getElementById("tab");
+				//得到表格中每一行
+				var rows = tab.rows;
+				//便利所有的行,然后根据奇数 偶数
+				for(var i=1; i < rows.length; i++){
+					var row = rows[i];  //得到其中的某一行
+					if(i%2==0){
+						row.bgColor = "yellow";
+					}else{
+						row.bgColor = "red"
+					}
+				}
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<table border="1px" width="600px" id="tab">
+			<tr >
+				<td>
+					<input type="checkbox" />
+				</td>
+				<td>分类ID</td>
+				<td>分类名称</td>
+				<td>分类商品</td>
+				<td>分类描述</td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" />
+				</td>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>华为,小米,尼康</td>
+				<td>黑马数码产品质量最好</td>
+				<td>
+					<a href="#">修改</a>|<a href="#">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" />
+				</td>
+				<td>2</td>
+				<td>成人用品</td>
+				<td>充气的</td>
+				<td>这里面的充气电动硅胶的</td>
+				<td><a href="#">修改</a>|<a href="#">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" />
+				</td>
+				<td>3</td>
+				<td>电脑办公</td>
+				<td>联想,小米</td>
+				<td>笔记本特卖</td>
+				<td><a href="#">修改</a>|<a href="#">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" />
+				</td>
+				<td>4</td>
+				<td>馋嘴零食</td>
+				<td>辣条,麻花,黄瓜</td>
+				<td>年货</td>
+				<td><a href="#">修改</a>|<a href="#">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" />
+				</td>
+				<td>5</td>
+				<td>床上用品</td>
+				<td>床单,被套,四件套</td>
+				<td>都是套子</td>
+				<td><a href="#">修改</a>|<a href="#">删除</a></td>
+			</tr>
+		</table>
+	</body>
+</html>
