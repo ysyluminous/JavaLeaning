@@ -12,8 +12,9 @@
 # 导论
 * [学习方法](./00recommend/studyMethod.md)
 - [Java程序员必备书单](./00recommend/RecommendBook.md)
+- [学习资源](./00recommend/studySource.md)
 - [GitHub漫游指南](./00recommend/GitHubRec.md)
-
+- [常用第三方库](./00recommend/threeLab.md)
 
 # 计算机基础
 
@@ -23,11 +24,15 @@
 * [HTTPS中的TLS](./network/HTTPS中的TLS.md)
 
 ## 操作系统
+
 ### Linux相关
+
 * [后端程序员必备的 Linux 基础知识](./operating-system/后端程序员必备的Linux基础知识.md)  
 * [Shell 编程入门](./operating-system/Shell.md)  
 ## 数据结构与算法  
+
 ### 数据结构
+
 - [数据结构知识学习与面试](./dataStructures-algorithms/数据结构.md)
 - [(大话数据结构01)顺序表和单链表的比较](https://blog.csdn.net/u010391342/article/details/86760777)
 - [(大话数据结构02)循环列表的实现](https://blog.csdn.net/u010391342/article/details/86767093)
@@ -265,6 +270,7 @@
 - [如何实现 MySQL 的读写分离？MySQL 主从复制原理是啥？如何解决 MySQL 主从同步的延时问题？](high-concurrency/mysql-read-write-separation.md)
 
 ### 高并发系统
+
 - [如何设计一个高并发系统？](high-concurrency/high-concurrency-design.md)
 
 ### [面试连环炮](distributed-system/distributed-system-interview.md)
@@ -337,10 +343,10 @@
 
 # 容器
 ## Docker
+
 * [Docker 入门](./tools/Docker.md)
 * [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
 - [Docker学习笔记](2019/docker笔记.md)
-
 - [ ] LXC
 - [ ] AWS
 
@@ -418,7 +424,7 @@
 - [图解剑指Offer](https://github.com/ZXZxin/ZXBlog/tree/master/%E5%88%B7%E9%A2%98/Other/%E5%89%91%E6%8C%87Offer)
 - [互联网Java工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [pandownload百度网盘不限速下载](http://pandownload.com/index.html)
-- [常用第三方库](./00recommend/threeLab.md)
+
 
 # Todo
 - 多线程
