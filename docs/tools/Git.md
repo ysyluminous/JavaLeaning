@@ -244,7 +244,7 @@ git push origin
 
 **First commit any outstanding code changes**, and then, run this command:
 
-`
+
 
 ```
 git rm -r --cached .
