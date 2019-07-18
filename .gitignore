@@ -5,7 +5,10 @@
 *.log
 
 #wordÎÄµµ
-# /words
+ /words
+ 
+ /code
+ /mind
 # BlueJ files
 *.ctxt
 

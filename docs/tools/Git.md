@@ -228,6 +228,46 @@ git push origin
 
 
 
+###  使用.gitignore文件删除掉已经提交的文件
+
+[在Windows系统里创建.gitignore文件](https://www.cnblogs.com/xbj-2016/p/6859493.html)
+
+\1. 在项目根目录下面创建gitignore.txt文件
+
+\2. 把你需要排除的文件名保存到gitignore.txt文件
+
+\3. 在项目根目录下面按住Shift键并邮件然后选择“在此处打开命令窗口”
+
+\4. 执行命令 `ren gitignore.txt .gitignore`
+
+顺序依次执行如下命令：
+
+**First commit any outstanding code changes**, and then, run this command:
+
+`
+
+```
+git rm -r --cached .
+```
+
+
+
+This removes any changed files from the *index*(staging area), then just run:
+
+```
+git `add` .
+```
+
+Commit it:
+
+`git `commit` -m `".gitignore is now working"``
+
+最后提交到远程仓库，会发现.gitignore文件起作用了。
+
+
+
+
+
 # Git-Commit-Log规范（Angular 规范）
 
 ## Commit message目的
