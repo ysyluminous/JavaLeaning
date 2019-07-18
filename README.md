@@ -1,12 +1,6 @@
 
 
-<!--
-<p align="center">
-<a href="https://github.com/Snailclimb/JavaGuide" target="_blank">
-	<img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/logo - 副本.png" width=""/>
-</a>
-</p>
--->
+
 
 <p align="center">
   <a href="https://ysyluminous.github.io/JavaLeaning/">
@@ -37,7 +31,7 @@
       Gitee版本，更新慢，速度慢
     </a>
 
-</p>
+
 
 
 

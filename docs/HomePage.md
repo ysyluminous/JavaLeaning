@@ -1,10 +1,9 @@
 
 <h1 align="center">Java构架师之路</h1>
 <p align="center">
-	<!--
+<!--
 <a href="https://github.com/Snailclimb/JavaGuide" target="_blank">
  <img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/logo - 副本.png" width=""/>
-
 </a>
  -->
 
@@ -128,8 +127,12 @@
 - [结构型模式](2019/结构型模式.md)
 - [行为型模式](2019/行为型模式.md)
 
-
 # JavaWeb
+
+- nodejs
+
+  [nodejs安装](nodejs/nodejs-install.md)
+
 - jsp
 - servlet
 
@@ -143,7 +146,6 @@
 - [Spring中都用到了那些设计模式?](./system-design/framework/spring/Spring-Design-Patterns.md)
 
 ## SpringCloud
-- [微服务架构整个章节内容属额外新增，后续抽空更新，也欢迎读者们参与补充完善](https://github.com/doocs/advanced-java)
 - [关于微服务架构的描述](micro-services/microservices-introduction.md)
 - [SpringCloud集成eureka注册中心访问权限](https://blog.csdn.net/u010391342/article/details/83086519)
 - [SpringCloud集成Consul实现服务注册中心](https://blog.csdn.net/u010391342/article/details/83082801)
@@ -187,13 +189,17 @@
 # 开发工具
 ## IEDA
 [热键](./03software/IDEA/hotKey.md)
-## 代码管理（SCM）：
+## 代码管理
 - GitHub
 * [Git入门](./tools/Git.md)
 - GitLab
 - BitBucket
 - SubVersion
-## 数据存储：
+
+
+
+# 数据存储：
+
 - [X]  MySQL
 * [MySQL 学习与面试](./05data/MySQL.md)
 * [一千行MySQL学习笔记](./05data/一千行MySQL命令.md)
@@ -227,7 +233,9 @@
 - [生产环境中的 Redis 是怎么部署的？](high-concurrency/redis-production-environment.md)
 
 
-## 服务注册与发现
+
+# 服务注册与发现
+
 - [X] Zookeeper
 - [ZooKeeper 相关概念总结](./system-design/framework/ZooKeeper.md)
 - [ZooKeeper 数据模型和常见命令](./system-design/framework/ZooKeeper数据模型和常见命令.md)
@@ -341,12 +349,10 @@
 - [es 在数据量很大的情况下（数十亿级别）如何提高查询效率啊？](high-concurrency/es-optimizing-query-performance.md)
 - [es 生产集群的部署架构是什么？每个索引的数据量大概有多少？每个索引大概有多少个分片？](high-concurrency/es-production-cluster.md)
 
-# 容器
+# 容器 
 ## Docker
 
-* [Docker 入门](./tools/Docker.md)
-* [一文搞懂 Docker 镜像的常用操作！](./tools/Docker-Image.md)
-- [Docker学习笔记](2019/docker笔记.md)
+- [Docker学习笔记](docker/docker.md)
 - [ ] LXC
 - [ ] AWS
 
@@ -356,7 +362,7 @@
 - [ ] Blaze Meter
 - [ ] loader.io
 
-# 项目管理（PM）
+# 项目管理
 
 - [ ] Jira、Asana
 - [ ] Taiga
@@ -364,7 +370,7 @@
 - [ ] Basecamp、Pivotal Tracker
 
 ## 自动部署
-- Jenkins。
+- Jenkins
 - Capistrano
 - CodeDeploy
 
@@ -455,8 +461,6 @@ ridis 主从复制
 ### 降级
 - 如何进行降级？
 
-
-
 ## 脚本语言
 - [ ] python、ruby、shell
 
@@ -470,23 +474,20 @@ ridis 主从复制
 ## 性能监控
 - [ ] AppDynamics、New Relic、Splunk
 
-## 预警：
+## 预警
 - [ ] PagerDuty
 - [ ] pingdom、厂商自带如AWS SNS
 
 ## HTTP加速器
 - [ ] Varnish
 
-
-
 # 学习交流
-QQ群：874514813
+[●欢迎点击加入QQ群874514813学习交流](https://jq.qq.com/?_wv=1027&k=5KVEQ2o)
 
 # 特别鸣谢
-> 该静态文档使用
-- docsify
+该静态文档使用**docsify**生成
 
-> 本仓库内容的基础构建源于以下rep，
+> 本仓库内容的初始构建源于以下rep
 - [架构师的成长之路](https://github.com/csy512889371/learnDoc)
 - [JavaGuide](https://github.com/Snailclimb/JavaGuide)
 - [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)

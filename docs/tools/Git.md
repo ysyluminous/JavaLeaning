@@ -1,26 +1,4 @@
-<!-- TOC -->
 
-- [版本控制](#版本控制)
-    - [什么是版本控制](#什么是版本控制)
-    - [为什么要版本控制](#为什么要版本控制)
-    - [本地版本控制系统](#本地版本控制系统)
-    - [集中化的版本控制系统](#集中化的版本控制系统)
-    - [分布式版本控制系统](#分布式版本控制系统)
-- [认识 Git](#认识-git)
-    - [Git 简史](#git-简史)
-    - [Git 与其他版本管理系统的主要区别](#git-与其他版本管理系统的主要区别)
-    - [Git 的三种状态](#git-的三种状态)
-- [Git 使用快速入门](#git-使用快速入门)
-    - [获取 Git 仓库](#获取-git-仓库)
-    - [记录每次更新到仓库](#记录每次更新到仓库)
-    - [推送改动到远程仓库](#推送改动到远程仓库)
-    - [远程仓库的移除与重命名](#远程仓库的移除与重命名)
-    - [查看提交历史](#查看提交历史)
-    - [撤销操作](#撤销操作)
-    - [分支](#分支)
-- [推荐阅读](#推荐阅读)
-
-<!-- /TOC -->
 
 ## 版本控制
 
@@ -38,7 +16,7 @@
 
 为了解决这个问题，人们很久以前就开发了许多种本地版本控制系统，大多都是采用某种简单的数据库来记录文件的历次更新差异。
 
-![本地版本控制系统](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/本地版本控制系统.png)
+![本地版本控制系统1](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/本地版本控制系统.png)
 
 ### 集中化的版本控制系统
 
@@ -46,7 +24,7 @@
 
 集中化的版本控制系统都有一个单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人们都通过客户端连到这台服务器，取出最新的文件或者提交更新。
 
-![集中化的版本控制系统](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/集中化的版本控制系统.png)
+![集中化的版本控制系统1](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/集中化的版本控制系统.png)
 
 这么做虽然解决了本地版本控制系统无法让在不同系统上的开发者协同工作的诟病，但也还是存在下面的问题：
 
@@ -98,10 +76,10 @@ Linux 内核项目组当时使用分布式版本控制系统 BitKeeper 来管理
 
 Git 不按照以上方式对待或保存数据。 反之，Git 更像是把数据看作是对小型文件系统的一组快照。 每次你提交更新，或在 Git 中保存项目状态时，它主要对当时的全部文件制作一个快照并保存这个快照的索引。 为了高效，如果文件没有修改，Git 不再重新存储该文件，而是只保留一个链接指向之前存储的文件。 Git 对待数据更像是一个 **快照流**。
 
-<div align="center">  
-<img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3snapshots.png" width="500px"/>
-</br>
-</div>
+
+
+![](Git.assets/2019-3snapshots-1563432577767.png)
+
 
 
 ### Git 的三种状态
@@ -250,7 +228,176 @@ git push origin
 
 
 
-## 推荐阅读
+# Git-Commit-Log规范（Angular 规范）
+
+## Commit message目的
+
+- 生成 CHANGELOG.md
+- 识别不重要的提交
+- 在浏览 Git 历史时提供更多信息
+
+## Angular 规范
+
+- 恢复(Revert)
+- 信息头部
+   \- 必需<type>
+- \- 必需<scope>
+- \- <subject>文本
+- 信息主体
+- 信息尾部
+   \- 重大更改(Breaking changes)
+- \- 引用讨论(Referencing issues)
+
+标准格式如下：
+
+```
+<type>(<scope>): <subject> #header
+// 空一行
+<body>
+// 空一行
+<footer> 
+```
+
+> Header 是必需的，Body 和 Footer 可以省略。
+
+### 格式讲解
+
+### Header
+
+Header部分只有一行，包括三个字段：type（必需）、scope（可选）和subject（必需）。
+
+#### type
+
+用于说明本次commit的类别，只允许使用下面7个标识
+
+- `feat`：新功能（feature）
+- `fix`：修补bug
+- `docs`：文档（documentation）
+- `style`： 格式（不影响代码运行的变动）
+- `refactor`：重构（即不是新增功能，也不是修改bug的代码变动）
+- `test`：增加测试
+- `chore`：构建过程或辅助工具的变动
+
+> 如果type为feat和fix，则该 commit 将肯定出现在 Change log 之中。其他情况（docs、chore、style、refactor、test）由你决定，要不要放入 Change log，建议是不要。
+
+#### scope
+
+用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。
+
+#### subject
+
+是 commit 目的的简短描述，不超过50个字符。
+
+```
+以动词开头，使用第一人称现在时，比如change，而不是changed或changes
+第一个字母小写
+结尾不加句号（.）
+```
+
+### Body
+
+用于对本次 commit 的详细描述，可以分成多行。下面是一个范例。
+
+```
+More detailed explanatory text, if necessary.  Wrap it to 
+about 72 characters or so. 
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+- Use a hanging indent
+```
+
+有两个注意点：
+
+1. 使用第一人称现在时，比如使用change而不是changed或changes。
+2. 应该说明代码变动的动机，以及与以前行为的对比。
+
+### Footer
+
+Footer 部分只用于两种情况。
+
+#### 不兼容变动
+
+如果当前代码与上一个版本不兼容，则 Footer 部分以`BREAKING CHANGE`开头，后面是对变动的描述、以及变动理由和迁移方法。
+
+```
+BREAKING CHANGE: isolate scope bindings definition has changed.
+
+To migrate the code follow the example below:
+
+Before:
+
+scope: {
+  myAttr: 'attribute',
+}
+
+After:
+
+scope: {
+  myAttr: '@',
+}
+
+The removed `inject` wasn't generaly useful for directives so there should be no code using it.
+```
+
+#### 关闭 Issue
+
+如果当前 commit 针对某个issue，那么可以在 Footer 部分关闭这个 issue 。
+
+```
+Closes #234
+```
+
+也可以一次关闭多个 issue 。
+
+```
+Closes #123, #245, #992
+```
+
+### Revert（可忽视）
+
+还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以`revert:`开头，后面跟着被撤销 Commit 的 Header。
+
+```
+revert: feat(pencil): add 'graphiteWidth' option
+
+This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
+```
+
+Body部分的格式是固定的，必须写成This reverts commit <hash>.，其中的hash是被撤销 commit 的 SHA 标识符。
+
+如果当前 commit 与被撤销的 commit，在同一个发布（release）里面，那么它们都不会出现在 Change log 里面。如果两者在不同的发布，那么当前 commit，会出现在 Change log 的Reverts小标题下面。
+
+## 提交频率
+
+关于什么时候提交一次：
+
+每次你写完一个功能的时候，就应该做一次提交（这个提交是提交到本地的git库中）
+
+当然，这里的写完表示的是你的这个功能是没有问题的；
+
+
+
+## 示例
+
+- docs(guide/migration): fix typo (misceallenous --> miscellaneous)
+
+- fix(ngStyle): correctly remove old style when new style value is invalid
+
+- chore(*): update jQuery from 3.2.1 to 3.4.0
+
+- test(ngAnimate): ensure that `blockTransitions` can be spied upon
+
+
+## 参考
+
+>  - https://www.jianshu.com/p/c7e40dab5b05
+>  -  https://blog.csdn.net/terrychinaz/article/details/72676721
+>  -  https://github.com/angular/angular.js/commits/master
+
+
+# 推荐阅读
 
 - [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 - [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
